@@ -38,7 +38,7 @@ npm run dev
 
 The API will be available at 
 ```
-http://lcaolhost:3000
+http://localhost:3000
 ```
 
 ## API Endpoints
@@ -46,11 +46,21 @@ http://lcaolhost:3000
 ```
 GET /api/users/:userId/investments
 ```
+> Sample UserId: 
+>>
+```
+user1
+user2
+```
 ### Get details for a user's investment:
 ```
 GET /api/users/:userId/investments/:investmentId
 ```
-
+> Sample details:
+```
+userId: user1
+investmentId: EQ-001
+```
 ## Assumptions & Scope Decisions
 
 * Data is stored in memory for simplicity
